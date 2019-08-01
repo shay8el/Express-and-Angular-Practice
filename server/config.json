@@ -1,0 +1,19 @@
+{
+  "app_port" : 3000,
+  "recent_result_limit" : 300,
+  "risk_mater_calculation": {
+    "severity": {
+      "High": 100,
+      "Medium": 70,
+      "Low": 40
+    },
+    "type": {
+      "vip": 100,
+      "AttackIndication": 80,
+      "ExploitableData": 60,
+      "BrandSecurity": 40,
+      "DataLeakage": 20,
+      "Phishing": 10
+    }
+  }
+}
