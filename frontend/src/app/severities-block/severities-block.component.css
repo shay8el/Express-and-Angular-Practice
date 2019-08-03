@@ -1,0 +1,18 @@
+.labels-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+}
+.chart-container {
+  flex-grow: 1;
+  margin: auto;
+  padding-bottom: 1em;
+}
+

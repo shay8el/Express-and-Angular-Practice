@@ -1,0 +1,20 @@
+.progress-label{
+  font-size: smaller;
+}
+.labeled-progress{
+  padding-bottom: 0.5em;
+}
+
+.progress {
+  height: 0.3em;
+}
+.progress-bar {
+  height: 0.3em;
+  background-color: #419fc3;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+}

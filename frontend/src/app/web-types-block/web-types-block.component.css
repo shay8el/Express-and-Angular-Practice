@@ -1,0 +1,18 @@
+.card-content {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.data-label {
+  flex: 0 0 45%;
+  border-top: 1.5px solid #243a4c;
+  padding: 2% 0 2% 5%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.card-title{
+  margin-bottom: 0;
+}

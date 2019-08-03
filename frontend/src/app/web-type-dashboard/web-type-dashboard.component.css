@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.item {
+  flex-grow:1;
+  margin-right: 10px;
+}
+.web-types{
+  flex-grow:0;
+  width: 50em;
+
+}
+

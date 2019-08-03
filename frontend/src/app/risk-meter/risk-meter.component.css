@@ -1,0 +1,6 @@
+.risk-meter-block{
+  width: 50em;
+}
+.progress-bar {
+  background: -webkit-linear-gradient(left, #419fc3 0%, #df9e26 40%,#df9e26 60%, #c33d3e 100%) fixed;
+}

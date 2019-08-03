@@ -1,0 +1,56 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #264c6e;
+  color: #d7d7d7;
+  font-size: 0.65em;
+  margin: 4em;
+}
+
+
+.card {
+  background-color: #254462;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  background-color: #243a4c;
+  padding: 0.8em 1em;
+  height: auto;
+  margin-bottom: 0.8em;
+}
+
+.card-content {
+  padding: 0.3em 1em;
+  flex-grow: 1;
+}
+
+.label-value {
+  font-size: large;
+}
+
+.label-key {
+  width: 5em;
+  font-size: smaller;
+}
+
+.progress {
+  flex-grow: 1;
+  height: 0.4em;
+  background-color: #243a4c;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 40px;
+}
+
+.progress-bar {
+  height: 0.4em;
+  border-radius: 40px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+
+}

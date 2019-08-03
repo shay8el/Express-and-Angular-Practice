@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app" *ngIf="data | async as adata; else loading">
+  <app-risk-meter class="risk-meter-block" [riskMeterValue]="(data | async)?.riskMeter" ></app-risk-meter>
+  <div class="container">
+    <app-web-type-dashboard class="item" *ngFor="let networkType of (data | async)?.dashboardData" [dashboardData]="networkType">
+    </app-web-type-dashboard>
+  </div>
+</div>
+<ng-template #loading>Loading Data...</ng-template>
