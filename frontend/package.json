@@ -3,11 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.config.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "client": "npm start",
+    "server": "cd ../server && npm start",
+    "server-first-time": "cd ../server && npm install && npm start",
+    "start-project": "concurrently \"npm run server\" \"npm run client\"",
+    "first-time": "concurrently \"npm run server-first-time\" \"npm run client\""
   },
   "private": true,
   "dependencies": {
@@ -39,6 +44,7 @@
     "@types/lodash": "^4.14.136",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "concurrently": "^4.1.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

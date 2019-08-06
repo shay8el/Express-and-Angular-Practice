@@ -11,6 +11,6 @@ const port = config.app_port;
 
 
 
-app.use('/', getDashboard);
+app.use('/api', getDashboard);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

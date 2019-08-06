@@ -8,7 +8,7 @@ import {Observable} from 'rxjs';
 })
 export class DataBinderService {
   getData(): Observable<any> {
-    const data = this.http.get<any>('http://127.0.0.1:3000/');
+    const data = this.http.get<any>('/api');
     return data;
   }
 
