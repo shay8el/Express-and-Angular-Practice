@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import * as _ from 'lodash';
-import {DataBinderService} from '../data-binder.service';
+import {DataBinderService} from '../../services/data-binder/data-binder.service';
 
 @Component({
   selector: 'app-sources-block',

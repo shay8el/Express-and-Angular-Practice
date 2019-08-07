@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {DataBinderService} from './data-binder.service';
-import {share} from 'rxjs/operators';
+import {DataBinderService} from './services/data-binder/data-binder.service';
 import {Observable} from 'rxjs';
+
 
 @Component({
   selector: 'app-root',

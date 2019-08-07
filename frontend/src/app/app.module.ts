@@ -1,14 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { AppComponent } from './app.component';
-import { WebTypesBlockComponent } from './web-types-block/web-types-block.component';
-import { WebTypeDashboardComponent } from './web-type-dashboard/web-type-dashboard.component';
-import { SeveritiesBlockComponent } from './severities-block/severities-block.component';
-import { SourcesBlockComponent } from './sources-block/sources-block.component';
-import { RiskMeterComponent } from './risk-meter/risk-meter.component';
-import {HttpClientModule} from '@angular/common/http';
+import {NgModule} from '@angular/core';
+import {AppComponent} from './app.component';
 import {ChartsModule} from 'ng2-charts';
+import {WebTypeDashboardComponent} from './components/web-type-dashboard/web-type-dashboard.component';
+import {RiskMeterComponent} from './components/risk-meter/risk-meter.component';
+import {WebTypesBlockComponent} from './components/web-types-block/web-types-block.component';
+import {SeveritiesBlockComponent} from './components/severities-block/severities-block.component';
+import {HttpClientModule} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {SourcesBlockComponent} from './components/sources-block/sources-block.component';
+import {BrowserModule} from '@angular/platform-browser';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {ChartsModule} from 'ng2-charts';
     WebTypeDashboardComponent,
     SeveritiesBlockComponent,
     SourcesBlockComponent,
-    RiskMeterComponent
+    RiskMeterComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
