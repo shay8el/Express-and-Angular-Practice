@@ -1,15 +1,17 @@
 import {Injectable} from '@angular/core';
 import * as _ from 'lodash';
 import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {interval, Observable} from 'rxjs';
+import {retryWhen} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataBinderService {
   getData(): Observable<any> {
-    const data = this.http.get<any>('/api');
-    return data;
+    return this.http.get<any>('/api').pipe(retryWhen(() => {
+      return interval(3000);
+    }));
   }
 
   constructor(private http: HttpClient) {
