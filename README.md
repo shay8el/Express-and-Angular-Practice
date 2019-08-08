@@ -1,4 +1,7 @@
 # Express-and-Angular-Practice
+
+![](https://media.giphy.com/media/L3X0WipFI3JBPeTQXw/giphy.gif)
+
 To start the project first time,
 you should execute:
 ```
