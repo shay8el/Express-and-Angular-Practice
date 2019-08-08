@@ -12,7 +12,7 @@ export class SourcesBlockComponent implements OnInit {
   set blockData(blockData: any) {
     this.networkName = this.camelToWordsUpper(blockData.networkName.toString());
     const field = _.find(blockData.data, {fieldName: 'source'});
-    this.fieldName = this.camelToWordsUpper(field.fieldName.toString()) + 'S';
+    this.fieldName = this.camelToWordsUpper(field.fieldName.toString()) + 'S (%)';
     this.data = this.dataBinder.covertCountsToPercentages(field.count.map((item) => _.toPairs(item)[0]));
   }
 
